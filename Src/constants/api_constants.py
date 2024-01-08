@@ -1,4 +1,4 @@
-class APIConstants():
+class APIConstants:
     @staticmethod
     def base_url():
         return "https://restful-booker.herokuapp.com"
