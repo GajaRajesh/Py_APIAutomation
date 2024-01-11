@@ -13,8 +13,8 @@ def read_credentials_from_excel(file_path):
         username,password=row
         credentials.append({"username":username,
                             "password":password})
-        print(credentials)
-        return credentials
+        #print(credentials)
+    return credentials
 
 def make_request_auth(username,password):
     payload={
@@ -35,5 +35,5 @@ def test_post_create_token():
         print(username,password)
         response=make_request_auth(username,password)
         print(response.json())
-        token=response.json()["token"]
+        #token=response.json()["token"]
         assert response.status_code==200,"not 200"
